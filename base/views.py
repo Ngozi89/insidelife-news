@@ -25,6 +25,7 @@ class PostDetail(View):
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
 
+# Create Dictonary to supply context
         return render(
             request,
             "post_detail.html",
