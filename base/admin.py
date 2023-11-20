@@ -9,10 +9,10 @@ from django_summernote.admin import SummernoteModelAdmin
 class PostAdmin(SummernoteModelAdmin):
 
     list_display = ('title', 'slug', 'status', 'created_on')
-# Search field    
+# Search field.
     search_fields = ['title', 'content']
     prepopulated_fields = {'slug': ('title',)}
-# Add filter to filter post by status or date    
+# Add filter to filter post by status or date.
     list_filter = ('status', 'created_on')
     summernote_fields = ('content')
 
@@ -22,7 +22,7 @@ class CommentAdmin(admin.ModelAdmin):
 
     list_display = ('name', 'body', 'post', 'created_on', 'approved')
     list_filter = ('approved', 'created_on')
-# Search through comments    
+# Search through comments.
     search_fields = ['name', 'email', 'body']
     actions = ['approve_comments']
 
