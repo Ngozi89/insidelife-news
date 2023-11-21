@@ -29,12 +29,12 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = 'FALSE'
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['insidelife-4d790a02316a.herokuapp.com',
-                 '8000-ngozi89-insidelife-news-5y9iskt9fk.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['insidelife-4d790a02316a.herokuapp.com', 
+'8000-ngozi89-insidelife-news-5y9iskt9fk.us2.codeanyapp.com']
 
 
 # Application definition
